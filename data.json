@@ -1,0 +1,19 @@
+{
+	"en":[
+		{
+			"websiteTitle": "Wish.lolz",
+			"backgroundImg": "wrapper_bg.jpg",
+			"defaultHeading": "Your Name",
+			"headerText":"is wishing you Happy Independaence Day",
+			"middleImg":"minddle-img.png",
+			"footerText":"Happy Independaence Day to everyone, I wish you all faith in the words, freedom in the mind and pride in your souls. Let's salute this glorious nation on its independence Day!",
+			"inputText":"Your name",
+			"inputBtn":"Submit"
+		},
+		{
+			"scrollingIcons": "kazak-el1.png, kazak-el2.png, kazak-el3.png, kazak-el4.png, kazak-el1.png, kazak-el1.png, kazak-el2.png, kazak-el3.png, kazak-el4.png, kazak-el1.png, kazak-el2.png, kazak-el3.png, kazak-el4.png, kazak-el1.png, kazak-el2.png, kazak-el3.png, kazak-el4.png",
+			"iconsWidth": "35px"
+		}
+		
+	]
+}
