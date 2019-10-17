@@ -9,6 +9,8 @@
 			"footerText":"Happy Independaence Day to everyone, I wish you all faith in the words, freedom in the mind and pride in your souls. Let's salute this glorious nation on its independence Day!",
 			"inputText":"Your name",
 			"inputBtn":"Submit",
+			"inputTextbg":"#229b7a", "inputTextcolor":"#fff",
+			"inputBtnbg":"#229b7a", "inputBtncolor":"#fff",
 			"fbShareBtn":"Share on Facebook",
 			"whatsappShareBtn":"Share on WhatsApp"
 		},
@@ -29,6 +31,8 @@
 			"footerText":"Нажмите здесь для создания своей поздравительной открытки",
 			"inputText":"Your name",
 			"inputBtn":"Submit",
+			"inputTextbg":"#f00", "inputTextcolor":"#161616",
+			"inputBtnbg":"#f00", "inputBtncolor":"#161616",
 			"fbShareBtn":"Share on Facebook",
 			"whatsappShareBtn":"Share on WhatsApp"
 		},

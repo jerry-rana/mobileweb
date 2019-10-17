@@ -7,7 +7,6 @@
 	$str = file_get_contents('data.json');
 	$data = json_decode($str, true);
 	if(isset($data[$sl])){$arr = $data[$sl];}else{$arr = $data['en'];}
-	
 	if(isset($_REQUEST['name'])){
 		$name = $_REQUEST['name'];
 	}else{
@@ -64,8 +63,8 @@
 						</div>
 					<?php }else{?>	
 						<form method="post" onsubmit="" action="">
-							<input id="input-text" name="name" type="text" placeholder="<?=$arr[0]["inputText"]?>" pattern="(?!@).*" oninvalid="checkWord();" oninput="checkWord();">
-							<input onclick="return notEmp();" type="submit" value="<?=$arr[0]["inputBtn"]?>">
+							<input id="input-text" name="name" type="text" placeholder="<?=$arr[0]["inputText"]?>" pattern="(?!@).*" oninvalid="checkWord();" oninput="checkWord();" style="background-color: <?=$arr[0]["inputTextbg"]?>;color:<?=$arr[0]["inputTextcolor"]?>;">
+							<input onclick="return notEmp();" type="submit" value="<?=$arr[0]["inputBtn"]?>" style="background-color: <?=$arr[0]["inputBtnbg"]?>;color:<?=$arr[0]["inputBtncolor"]?>;">
 						</form>
 					<?php }?>	
 			</div><!--/footer-content-->
