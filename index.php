@@ -1,7 +1,18 @@
 <?php
+	if((isset($_GET['lg'])) && ($_GET['lg'] != '')){
+		$sl = $_GET['lg'];
+	}else{
+		$sl = 'en';
+	}
 	$str = file_get_contents('data.json');
 	$data = json_decode($str, true);
-	$arr = $data['en'];
+	if(isset($data[$sl])){$arr = $data[$sl];}else{$arr = $data['en'];}
+	
+	if(isset($_REQUEST['name'])){
+		$name = $_REQUEST['name'];
+	}else{
+		$name = $arr[0]["defaultHeading"];
+	}
 ?><!doctype html>
 <html>
 <head>
@@ -30,8 +41,13 @@
 				<!--Paste your add code here-->
 			</div><!--/add-placeholder-->
 		<div class="inner">	
+				<?php if(isset($_REQUEST['name'])){?>	
+					<div class="share-btn">
+						<a class="facebook" href="#" title="<?=$arr[0]["fbShareBtn"]?>"> <?=$arr[0]["fbShareBtn"]?> </a>
+					</div>
+				<?php }?>
 			<div class="header-content">
-				<h1 class="linear-wipe"><?=$arr[0]["defaultHeading"]?></h1>
+				<h1 class="linear-wipe"><?=$name?></h1>
 				<h2><?=$arr[0]["headerText"]?></h2>
 			</div><!--/header-content-->
 			
@@ -41,13 +57,19 @@
 
 			<div class="footer-content">
 				<h3><?=$arr[0]["footerText"]?></h3>
-				<h1>- Shashank</h1>
-				<form method="post" onsubmit="" action="">
-					<input id="input-text" name="name" type="text" placeholder="<?=$arr[0]["inputText"]?>">
-					<input type="submit" value="<?=$arr[0]["inputBtn"]?>">
-				</form>
-		
+				<h2>- <?=$name?></h2>
+					<?php if(isset($_REQUEST['name'])){?>	
+						<div class="share-btn">
+							<a class="whatsapp" href="#" title="<?=$arr[0]["whatsappShareBtn"]?>"> <?=$arr[0]["whatsappShareBtn"]?> </a>
+						</div>
+					<?php }else{?>	
+						<form method="post" onsubmit="" action="">
+							<input id="input-text" name="name" type="text" placeholder="<?=$arr[0]["inputText"]?>" pattern="(?!@).*" oninvalid="checkWord();" oninput="checkWord();">
+							<input onclick="return notEmp();" type="submit" value="<?=$arr[0]["inputBtn"]?>">
+						</form>
+					<?php }?>	
 			</div><!--/footer-content-->
+			
 			<div class="marquee marq">
 				<ul>
 				<?php
@@ -59,6 +81,7 @@
 					?>
 				</ul>
 			</div><!--/marquee-->
+			
 			<div class="marquee marquee-right marq">
 				<ul>
 				<?php
@@ -70,6 +93,7 @@
 					?>
 				</ul>
 			</div><!--/marquee-->
+			
 		</div>	
 			<div class="add-placeholder">
 				<!--Paste your add code here-->

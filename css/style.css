@@ -84,6 +84,23 @@ body{
 .active:hover {
 	background-color: #eee;
 }
+.share-btn a{
+	display:block;
+	margin:0 auto;
+	width:100%;
+	height:30px;
+	line-height:30px;
+	padding:0;
+	color:#fff;
+	text-align:center;
+	text-decoration:none;
+}
+.share-btn a.facebook{
+	background:#3b5998;
+}
+.share-btn a.whatsapp{
+	background:#00A437;
+}
 
 .marquee{
     width: 50px;
