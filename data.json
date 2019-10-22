@@ -2,7 +2,13 @@
 	"en":[
 		{
 			"websiteTitle": "Wish.lolz",
+			"websiteUrl": "https://wish.lolzz.me/en",
+			"metaDescription": "Meta Description goes here",
+			"metaKeys": "Meta Keywords goes here",
+			"ogType": "Article",
+			"ogImg": "https://wish.lolzz.me/kz/imgs/kz-meta.jpg",
 			"backgroundImg": "wrapper_bg.jpg",
+			"backgroundImgOptional": "kazak-back-1.gif",
 			"defaultHeading": "Your Name",
 			"headerText":"is wishing you Happy Independaence Day",
 			"middleImg":"minddle-img.png",
@@ -15,6 +21,12 @@
 			"whatsappShareBtn":"Share on WhatsApp"
 		},
 		{
+			"WelcomeImg":"kazak-el3.png",
+			"WelcomeImgSize":"200px",
+			"WelcomeText":"Welcome to page",
+			"WelcomeBtn":"Continue"
+		},
+		{
 			"scrollingIcons": "kazak-el1.png, kazak-el2.png, kazak-el3.png, kazak-el4.png, kazak-el1.png, kazak-el1.png, kazak-el2.png, kazak-el3.png, kazak-el4.png, kazak-el1.png, kazak-el2.png, kazak-el3.png, kazak-el4.png, kazak-el1.png, kazak-el2.png, kazak-el3.png, kazak-el4.png",
 			"iconsWidth": "35px"
 		}
@@ -24,17 +36,29 @@
 	"li":[
 		{
 			"websiteTitle": "Wish.lolz",
+			"websiteUrl": "https://wish.lolzz.me/en",
+			"metaDescription": "Meta Description goes here",
+			"metaKeys": "Meta Keywords goes here",
+			"ogType": "Article",
+			"ogImg": "https://wish.lolzz.me/kz/imgs/kz-meta.jpg",
 			"backgroundImg": "wrapper_bg.jpg",
-			"defaultHeading": "li Name",
-			"headerText":"lorem ipsum dolor sit amet",
+			"backgroundImgOptional": "kazak-back-1.gif",
+			"defaultHeading": "Your Name",
+			"headerText":"is wishing you Happy Independaence Day",
 			"middleImg":"minddle-img.png",
-			"footerText":"Нажмите здесь для создания своей поздравительной открытки",
+			"footerText":"Happy Independaence Day to everyone, I wish you all faith in the words, freedom in the mind and pride in your souls. Let's salute this glorious nation on its independence Day!",
 			"inputText":"Your name",
 			"inputBtn":"Submit",
-			"inputTextbg":"#f00", "inputTextcolor":"#161616",
-			"inputBtnbg":"#f00", "inputBtncolor":"#161616",
+			"inputTextbg":"#229b7a", "inputTextcolor":"#fff",
+			"inputBtnbg":"#229b7a", "inputBtncolor":"#fff",
 			"fbShareBtn":"Share on Facebook",
 			"whatsappShareBtn":"Share on WhatsApp"
+		},
+		{
+			"WelcomeImg":"kazak-el3.png",
+			"WelcomeImgSize":"200px",
+			"WelcomeText":"Welcome to page",
+			"WelcomeBtn":"Continue"
 		},
 		{
 			"scrollingIcons": "kazak-el1.png, kazak-el2.png, kazak-el3.png, kazak-el4.png, kazak-el1.png, kazak-el1.png, kazak-el2.png, kazak-el3.png, kazak-el4.png, kazak-el1.png, kazak-el2.png, kazak-el3.png, kazak-el4.png, kazak-el1.png, kazak-el2.png, kazak-el3.png, kazak-el4.png",

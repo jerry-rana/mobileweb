@@ -18,6 +18,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
 <title><?=$arr[0]["websiteTitle"]?></title>
+<meta name="description" content="<?=$arr[0]["metaDescription"]?>">
+<meta name="keywords" content="<?=$arr[0]["metaKeys"]?>">
+<meta property="og:type" content="<?=$arr[0]["ogType"]?>" />
+<meta property="og:title" content="<?=$arr[0]["websiteTitle"]?>" />
+<meta property="og:url" content="<?=$arr[0]["websiteUrl"]?>">
+<meta property="og:description" content="<?=$arr[0]["metaDescription"]?>" >
+<meta property="og:site_name" content="<?=$arr[0]["websiteTitle"]?>" />
+<meta property="og:image" content="<?=$arr[0]["ogImg"]?>"> 
+<meta property="og:image:type" content="<?=$arr[0]["ogImg"]?>" />
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="420">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/script.js"></script>
 </head>
@@ -26,9 +37,9 @@
 		<div class="topnav">
 		  <a href="#home" class="active"><?=$arr[0]["websiteTitle"]?></a>
 		  <div id="menuItems">
-			<a href="#home">Home</a>
-			<a href="#Privacy-policy">Privacy Policy</a>
-			<a href="#Disclaimer">Disclaimer</a>
+			<a href="<?=$arr[0]["websiteUrl"]?>">Home</a>
+			<a href="privacy-policy.html">Privacy Policy</a>
+			<a href="disclaimer.html">Disclaimer</a>
 		  </div>
 		  <a href="javascript:void(0);" class="icon" onclick="menu()">
 			<span class="bars"></span><span class="bars"></span><span class="bars"></span>
@@ -69,13 +80,26 @@
 					<?php }?>	
 			</div><!--/footer-content-->
 			
+					<?php if((isset($_GET['n'])) && ($_GET['n'] != '')){?>	
+						<div id="welcome-container">
+								<div class="welcome-inner">
+									<div><img width="<?=$arr[1]["WelcomeImgSize"]?>" src="imgs/<?=$arr[1]["WelcomeImg"]?>"> </div>
+								<br>
+								<p><?=$arr[1]["WelcomeText"]?></p>
+								<a href="#" class="welcome-btn" onclick="document.getElementById('welcome-container').style.display='none'" style="background-color:<?=$arr[0]["inputBtnbg"]?>;color:<?=$arr[0]["inputBtncolor"]?>;">
+								<?=$arr[1]["WelcomeBtn"]?>
+								</a> 
+								</div>
+						</div>
+					<?php }?>
+			
 			<div class="marquee marq">
 				<ul>
 				<?php
-					$icons = explode(', ', $arr[1]["scrollingIcons"]);
+					$icons = explode(', ', $arr[2]["scrollingIcons"]);
 					$len = count($icons);
 					for($x=0; $x<$len; $x++){
-						echo '<li><img src="imgs/'.$icons[$x].'" width="'.$arr[1]["iconsWidth"].'"/></li>';
+						echo '<li><img src="imgs/'.$icons[$x].'" width="'.$arr[2]["iconsWidth"].'"/></li>';
 					}
 					?>
 				</ul>
@@ -84,10 +108,10 @@
 			<div class="marquee marquee-right marq">
 				<ul>
 				<?php
-					$icons = explode(', ', $arr[1]["scrollingIcons"]);
+					$icons = explode(', ', $arr[2]["scrollingIcons"]);
 					$len = count($icons);
 					for($x=0; $x<$len; $x++){
-						echo '<li><img src="imgs/'.$icons[$x].'" width="'.$arr[1]["iconsWidth"].'"/></li>';
+						echo '<li><img src="imgs/'.$icons[$x].'" width="'.$arr[2]["iconsWidth"].'"/></li>';
 					}
 					?>
 				</ul>
